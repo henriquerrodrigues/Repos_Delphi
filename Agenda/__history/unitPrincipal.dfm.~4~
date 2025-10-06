@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Agenda de Contatos'
+  ClientHeight = 487
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 8
+    Top = 32
+    Width = 303
+    Height = 36
+    Caption = 'Agenda de Contatos'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -30
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 104
+    Width = 96
+    Height = 15
+    Caption = 'Nome do Contato'
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 155
+    Width = 37
+    Height = 15
+    Caption = 'Celular'
+  end
+  object DBEdit1: TDBEdit
+    Left = 8
+    Top = 125
+    Width = 303
+    Height = 23
+    DataField = 'nome'
+    DataSource = DM.dsContatos
+    TabOrder = 0
+  end
+  object DBEdit2: TDBEdit
+    Left = 8
+    Top = 176
+    Width = 225
+    Height = 23
+    DataField = 'celular'
+    DataSource = DM.dsContatos
+    TabOrder = 1
+  end
+  object Bloqueado: TDBCheckBox
+    Left = 24
+    Top = 248
+    Width = 97
+    Height = 17
+    Caption = 'Bloqueado'
+    DataField = 'bloqueado'
+    DataSource = DM.dsContatos
+    TabOrder = 2
+  end
+end
